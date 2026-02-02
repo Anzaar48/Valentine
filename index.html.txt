@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #fff;
+    }
+    button {
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sabiha, will you be my Valentine? 💘</h1>
+
+  <button class="yes" onclick="yesClick()">Yes 💖</button>
+  <button class="no" onclick="noClick()">No 😢</button>
+
+  <script>
+    function noClick() {
+      alert("Try again 😏");
+    }
+
+    function yesClick() {
+      document.body.innerHTML = `
+        <h1>I knew it 😍 You made a good decision!</h1>
+        <h2>Congratulations 💕</h2>
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Congratulations">
+      `;
+    }
+  </script>
+
+</body>
+</html>
